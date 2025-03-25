@@ -26,14 +26,16 @@ const Style: React.FC = () => {
       <style>
         {`
      dl {
-     font size: 1rem;
-     border: 1px solid #ccc;
-     display: grid;
-     max-width: calc(550rem / 16);
-      grid-template-columns: 2fr 1fr;
+         font-size: 1rem;
+            border: 1px solid #ccc;
+            display: grid;
+            max-width: calc(550rem/16);
+            grid-template-columns: 1fr 1fr;
+            border-bottom: none;
+            border-radius: 0.5rem;
      }`}
         {`dt{ 
-      font-weight: 900;
+      font-weight: 600;
       padding: var(--spacing-md) var(--spacing-md);
       border-bottom: 1px solid #ccc;
       }`}
@@ -55,6 +57,7 @@ const Style: React.FC = () => {
   
   // DT = TERMINE DI DESCRIZIONE
 // DD = DETTAGLIO DESCRIZIONE
+// DL = LISTA DEFIINZIONE
 export const Default: Story = {
     render: () => (
       <>
